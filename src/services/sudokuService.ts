@@ -106,6 +106,10 @@ export class SudokuService {
         return 49 + Math.floor(Math.random() * 4) // 28-32 cells visible
       case Difficulty.EXPERT:
         return 53 + Math.floor(Math.random() * 4) // 24-28 cells visible
+      case Difficulty.ADVANCED:
+        return 57 + Math.floor(Math.random() * 4) // 20-24 cells visible
+      default:
+        return 41 + Math.floor(Math.random() * 5) // Default to beginner
     }
   }
 

@@ -7,6 +7,7 @@ export enum Difficulty {
   INTERMEDIATE = 'intermediate',
   HARD = 'hard',
   EXPERT = 'expert',
+  ADVANCED = 'advanced',
 }
 
 export interface Cell {
@@ -34,6 +35,8 @@ export interface GameRecord {
   score: number
   date: string
   timeSpent: number
+  name?: string
+  isCurrentUser?: boolean
 }
 
 export interface GameSettings {
