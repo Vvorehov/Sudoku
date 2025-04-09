@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [],
+  "compilerOptions": {
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom", "vitest/globals"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vitest.config.ts"]
+}
